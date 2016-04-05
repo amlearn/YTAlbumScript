@@ -103,7 +103,7 @@ function setOptions() {
         formatOut('youtube link (-y) parameter required', true);
     }
 
-    $youtubeFile = escapeshellarg($options['youtube']);
+    $youtubeFile = escapeshellarg($options['y']);
 
     if (isset($options['k'])) {
         if (!is_boolean($options['k'])) {
